@@ -56,15 +56,20 @@ const Body = ({ keyFilter }) => {
 
     const handleDetailDelete = (parmIdDetail) => {
         // console.log("sdsad");
-        const updateListDetail = listDetails.filter(
-            (itemDetail) => itemDetail.id !== parmIdDetail
-        );
-
-        setListDetails(updateListDetail);
+        const confirm = window.confirm("Bạn có chắc muốn xoá !!!");
+        if (confirm) {
+            const updateListDetail = listDetails.filter(
+                (itemDetail) => itemDetail.id !== parmIdDetail
+            );
+            setListDetails(updateListDetail);
+        }
     };
 
     const handleDeleteAll = () => {
-        setListDetails([]);
+        const confirm = window.confirm("Bạn có chắc muốn xoá tất cả không !!!");
+        if (confirm) {
+            setListDetails([]);
+        }
     };
 
     const filterDetails = listDetails.filter((itemDetail) => {
