@@ -1,0 +1,44 @@
+.bd-wrapper {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.inp {
+    display: flex;
+    justify-content: space-between;
+}
+
+.inp-form {
+    padding-left: 10px;
+    width: 75%;
+    height: 50px;
+    border: 2px solid #ccc;
+    border-radius: 7px;
+}
+
+.inp-btn {
+    width: 20%;
+    height: 50px;
+    background-color: blueviolet;
+    border: 0;
+    border-radius: 7px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.result {
+    margin: 16px 0;
+    font-size: 26px;
+    line-height: 1.6;
+}
+
+.mr-c {
+    margin-right: 10px;
+}
+
+.btn-delete {
+    font-size: 26px;
+    color: #ccc;
+    margin-left: 10px;
+}
